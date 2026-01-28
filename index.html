@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pass The Pigs</title>
+  </head>
+  <body>
+    <main class="board">
+      <button class="btn retry">🔄 new game</button>
+
+      <img src="img/dice-4.png" alt="dice" class="dice" />
+
+      <button class="btn roll">🎲 Roll Dice</button>
+      <button class="btn hold">📥 Hold</button>
+
+      <section class="player player--1 active">
+        <h1>Player 1</h1>
+        <span class="score">43</span>
+
+        <section class="current-score">
+          <p class="current-score--label">current</p>
+          <p class="current-score--info">0</p>
+        </section>
+      </section>
+      <section class="player player--2">
+        <h1>Player 2</h1>
+        <span class="score">24</span>
+
+        <section class="current-score">
+          <p class="current-score--label">current</p>
+          <p class="current-score--info">0</p>
+        </section>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

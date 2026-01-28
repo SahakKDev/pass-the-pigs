@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(
+    120deg,
+    rgba(222, 20, 70, 0.9) 0%,
+    rgba(91, 0, 105, 0.9) 100%,
+    rgba(0, 0, 0, 0.9) 0%
+  );
+  height: 100vh;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.board {
+  width: 70rem;
+  height: 90%;
+  margin: auto;
+  border-radius: 8px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  position: relative;
+}
+
+.player {
+  width: 100%;
+  background-color: rgb(120, 6, 63);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+
+.player.active {
+  background-color: rgb(215, 164, 198);
+}
+
+.player h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.player .score {
+  font-size: 5rem;
+  color: rgb(186, 55, 169);
+}
+
+.player .current-score {
+  background-color: rgb(186, 55, 169);
+  width: 12rem;
+  padding: 1rem 2.5rem;
+  border-radius: 4px;
+  margin-top: auto;
+}
+
+.current-score--label {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.current-score--info {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.retry,
+.dice,
+.roll,
+.hold {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.btn {
+  background: none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 22px;
+  border: 2px solid #eee;
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.retry {
+  top: 3rem;
+  z-index: 1;
+}
+
+.dice {
+  top: 27%;
+  transform: translateX(-50%);
+  width: 6rem;
+}
+
+.roll {
+  bottom: 25%;
+}
+
+.hold {
+  bottom: 15%;
+}
