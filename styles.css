@@ -33,7 +33,7 @@ body {
 
 .player {
   width: 100%;
-  background-color: rgb(120, 6, 63);
+  background-color: #78063f;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,11 @@ body {
 }
 
 .player.active {
-  background-color: rgb(215, 164, 198);
+  background-color: #d7a4c6;
+}
+
+.player.winner {
+  background-color: #85bb65;
 }
 
 .player h1 {
