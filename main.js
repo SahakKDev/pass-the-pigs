@@ -49,11 +49,10 @@ function initGame() {
 }
 
 function hold() {
+  const activePlayerScore = document.querySelector(`.score--${activePlayer}`);
   const activePlayerCurrentScore = document.querySelector(
     `.current-score--${activePlayer}`,
   );
-
-  const activePlayerScore = document.querySelector(`.score--${activePlayer}`);
 
   const score = +activePlayerScore.textContent;
   const currentScore = +activePlayerCurrentScore.textContent;
@@ -62,7 +61,7 @@ function hold() {
 
   activePlayerScore.textContent = updatedScore;
 
-  if (updatedScore >= 10) {
+  if (updatedScore >= 100) {
     document.querySelector(`.player--${activePlayer}`).classList.add("winner");
     dice.classList.add("hidden");
     btnHold.classList.add("hidden");
@@ -72,10 +71,6 @@ function hold() {
 
   activePlayerCurrentScore.textContent = 0;
   switchActivePlayer();
-}
-
-function updateScore(activePlayer, score) {
-  document.querySelector(`.score--${activePlayer}`).textContent = score;
 }
 
 function updateCurrentScore(activePlayer, score) {
