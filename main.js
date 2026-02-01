@@ -42,6 +42,8 @@ function initGame() {
   document.querySelector(".winner")?.classList.remove("winner");
   btnHold.classList.remove("hidden");
   btnRollDice.classList.remove("hidden");
+  document.querySelector(".player--1").classList.add("active");
+  document.querySelector(".player--2").classList.remove("active");
 
   [...scores, ...currentScores].forEach((score) => {
     score.textContent = 0;
